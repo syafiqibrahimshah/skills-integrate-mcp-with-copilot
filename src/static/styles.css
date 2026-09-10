@@ -28,6 +28,35 @@ header h1 {
   margin-bottom: 10px;
 }
 
+.auth-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.auth-controls form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.auth-controls input {
+  width: 140px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.auth-controls label {
+  font-size: 14px;
+}
+
+.auth-controls span {
+  font-size: 14px;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -190,6 +219,13 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 600px) {
+  .auth-controls,
+  .auth-controls form {
+    flex-wrap: wrap;
+  }
 }
 
 footer {
